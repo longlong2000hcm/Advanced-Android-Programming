@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BirdActivity">
+
+    <TextView
+        android:id="@+id/intro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press animal to hear it"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="20dp"/>
+    <LinearLayout
+        android:id="@+id/birdfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/intro2"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/huuhkaja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/huuhkaja">
+        </ImageView>
+        <ImageView
+            android:id="@+id/peippo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/peippo">
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/birdsecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/birdfirst"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/peukaloinen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/peukaloinen">
+        </ImageView>
+        <ImageView
+            android:id="@+id/punatulkku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/punatulkku">
+        </ImageView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
